@@ -24,7 +24,7 @@ export default {
   methods: {
     async getTimezone() {
       try {
-        const response = await axios.get(`http://api.timezonedb.com/v2.1/get-time-zone?key=2SU4Z9IFLF2U&format=json&by=zone&zone=America/${this.city}`);
+        const response = await axios.get(`https://api.timezonedb.com/v2.1/get-time-zone?key=2SU4Z9IFLF2U&format=json&by=zone&zone=America/${this.city}`);
         const timezoneData = response.data;
         // console.log(timezoneData);
         const datetime = timezoneData.formatted;
